@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Project from "./pages/Project";
 import Contacts from "./pages/Contacts";
+// import FilterProductPage from "./pages/FilterProductPage";
 
 import ScrollToTop from "./utils/scrollToTop";
 

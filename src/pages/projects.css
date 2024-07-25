@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  color: #fff;
+} */
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.button {
+  border: 1px solid #000;
+  background: transparent;
+  margin: 5px 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0);
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 0 10px;
+  margin: 20px auto;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+/* .items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  } */
+
+.item {
+  position: relative;
+  padding: 10px 20px;
+  min-width: 100px;
+  min-height: 50px;
+  margin: 4px 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 30%;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* new */
+
+/* .item {
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+  } */
+
+.item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.item p {
+  font-size: 14px; /* Adjust the font size as needed */
+  margin: 2px auto; /* Remove default margin */
+  padding: 2px; /* Remove default padding */
+  line-height: 1.5; /* Adjust the line height as needed */
+}
+
+/* .item img {
+  width: 400px;
+  height: 350px;
+  display: block;
+  object-fit: contain; 
+} */
+
+/* new */
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+/* Add a new class for the zoomed image */
+/* .item img.zoomed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 80%;
+  max-height: 80%;
+  z-index: 999;
+  cursor: zoom-out;
+} */
+
+/* Add a new class to hide the items container when an image is zoomed */
+/* .items-container.zoomed {
+  display: none;
+} */
+
+.zoomed-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.zoomed-image img {
+  max-width: 90%;
+  max-height: 90%;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.category {
+  color: #64748b;
+  font-size: 10px;
+}
+
+.active {
+  background-color: #5c62ec;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex: 0 0 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    flex: 0 0 100%;
+  }
+}
