@@ -10,7 +10,7 @@ const Navbar = () => {
     <nav className="nav">
       <div className="container">
         <div className="nav-row">
-          <NavLink to="/" className="logo">
+          <NavLink to="/#" className="logo">
             <strong>Автоателье - перетяжка салона </strong> и перешив элементов
           </NavLink>
 

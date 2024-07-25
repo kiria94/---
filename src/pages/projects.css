@@ -149,10 +149,10 @@ p {
   font-size: 10px;
 }
 
-.active {
+/* .active {
   background-color: #5c62ec;
   color: #fff;
-}
+} */
 
 @media (max-width: 768px) {
   .item {
@@ -162,6 +162,6 @@ p {
 
 @media (max-width: 480px) {
   .item {
-    flex: 0 0 100%;
+    flex: 0 0 95%;
   }
 }

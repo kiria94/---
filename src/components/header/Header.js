@@ -11,7 +11,7 @@ const Header = () => {
           <br />a good service
         </h1>
         <div className="header__text">
-          <p>with passion.</p>
+          <p>Made with passion.</p>
         </div>
         <a href="/contacts" className="btn" path="/contacts">
           Contact Us
