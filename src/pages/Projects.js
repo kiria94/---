@@ -9,6 +9,7 @@ import "./projects.css";
 export default function MultiFilters() {
   const [selectedFilters, setSelectedFilters] = useState([]);
   const [filteredItems, setFilteredItems] = useState(projects);
+
   const [zoomedImage, setZoomedImage] = useState(null);
 
   let filters = [
