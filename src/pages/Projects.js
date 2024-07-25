@@ -64,7 +64,7 @@ export default function MultiFilters() {
           <button
             onClick={() => handleFilterButtonClick(category)}
             className={`button ${
-              selectedFilters?.includes(category) ? "active" : ""
+              selectedFilters?.includes(category) ? "actives" : ""
             }`}
             key={`filters-${idx}`}
           >

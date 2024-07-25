@@ -149,10 +149,10 @@ p {
   font-size: 10px;
 }
 
-/* .active {
+.actives {
   background-color: #5c62ec;
   color: #fff;
-} */
+}
 
 @media (max-width: 768px) {
   .item {
